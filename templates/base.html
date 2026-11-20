@@ -37,13 +37,13 @@
         th { background: #F4E5BB; }
         .messages { list-style: none; margin-bottom: 15px; }
         .messages li { padding: 10px; border-radius: 6px; margin-bottom: 8px; }
-        .messages .success { background: #dcfce7; color: #166534; }
-        .messages .error { background: #fee2e2; color: #991b1b; }
-        footer { text-align: center; padding: 20px; color: #64748b; font-size: 13px; }
+        .messages .success { background: #E2F4E8; color: #176B37; }
+        .messages .error { background: #FCE4E4; color: #A51D1D; }
+        footer { text-align: center; padding: 20px; color: #6B5B53; font-size: 13px; }
 
         .form-control {
             width: 100%; padding: 10px; margin-bottom: 12px;
-            border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;
+            border: 1px solid #D8C9B8; border-radius: 6px; font-size: 14px;
         }
         .form-check-input { margin-right: 8px; }
         form label { font-weight: bold; display: block; margin-bottom: 4px; }
@@ -60,7 +60,7 @@
             <a href="{% url 'lista_categorias' %}">Categorías</a>
             <a href="{% url 'lista_clientes' %}">Clientes</a>
             {% if user.is_authenticated %} 
-            <span style="color:#38bdf8;"> 👤 {{ user.username }}</span>
+            <span style="color:#F4C542;"> 👤 {{ user.username }}</span>
             <a href="{% url 'dashboard' %}">Dashboard</a> 
             <form action="{% url 'logout' %}" method="post" style="display:inline;" > 
             {% csrf_token %} 
